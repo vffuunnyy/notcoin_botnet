@@ -1,0 +1,6 @@
+/.ruff_cache/
+/.idea/
+**/__pychache__
+**/*.log
+/sessions/
+/__pycache__/
