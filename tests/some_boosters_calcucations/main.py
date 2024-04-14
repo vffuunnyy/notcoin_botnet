@@ -4,7 +4,6 @@ import math
 import sys
 
 from pathlib import Path
-from types.arrow import ArrowType
 
 import arrow
 
@@ -92,7 +91,7 @@ class SimulationData(BaseModel):
     energy_limit: EnergyLimit
     robot: Robot
 
-    start_date: ArrowType = arrow.get("2024.01.01 00:00:00")
+    start_date: arrow.Arrow = arrow.get("2024.01.01 00:00:00")
 
     def add_coins(self, coins: int) -> None:
         self.total_coins += coins
